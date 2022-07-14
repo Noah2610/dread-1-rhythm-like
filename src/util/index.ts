@@ -12,3 +12,18 @@ export function getLetterFromLaneId(laneId: LaneId): string {
             return "L";
     }
 }
+
+export function getLaneIdFromLetter(letter: string): LaneId | null {
+    switch (letter.toUpperCase()) {
+        case "H":
+            return "a";
+        case "J":
+            return "b";
+        case "K":
+            return "c";
+        case "L":
+            return "d";
+        default:
+            return null;
+    }
+}
