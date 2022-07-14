@@ -1,0 +1,74 @@
+:root {
+    --color-bg: #000000;
+    --color-fg: #ffffff;
+
+    --color-target-bg: #4444ff44;
+
+    --letter-size: 48px;
+}
+
+body {
+    margin: 0;
+    position: absolute;
+    inset: 0;
+
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.lanes {
+    position: absolute;
+    left: 4rem;
+    right: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lane {
+    outline: 1px solid red;
+
+    width: 6rem;
+    height: 6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disc {
+    font-size: var(--letter-size);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 2em;
+    height: 2em;
+
+    background-color: #ffffff44;
+    border-radius: 50%;
+}
+
+.beats {
+    top: 4rem;
+}
+
+.beat {
+    position: absolute;
+}
+
+.targets {
+    bottom: 4rem;
+}
+
+.target {
+    font-weight: bold;
+    text-shadow: 0 0 10px;
+
+    background-color: var(--color-target-bg);
+}
