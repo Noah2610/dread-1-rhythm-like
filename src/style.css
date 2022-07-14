@@ -17,6 +17,8 @@ body {
 
     font-family: monospace;
     font-size: 20px;
+
+    overflow-y: hidden;
 }
 
 .lanes {

@@ -1,4 +1,5 @@
 import "./style.css";
+import { handleDespawnBeats } from "./systems/handleDespawnBeats";
 import { handleSpawnBeats } from "./systems/handleSpawnBeats";
 import { moveBeats } from "./systems/moveBeats";
 
@@ -11,6 +12,7 @@ function main() {
 function update() {
     moveBeats();
     handleSpawnBeats();
+    handleDespawnBeats();
 
     FRAME++;
 
