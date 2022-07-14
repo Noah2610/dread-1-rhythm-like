@@ -1,6 +1,11 @@
-export function handleDespawnBeats() {
-    const screenBottom = document.body.getBoundingClientRect().bottom;
+import { FRAME } from "../main";
 
+export function handleDespawnBeats() {
+    if (FRAME % 60 !== 0) {
+        return;
+    }
+
+    const screenBottom = document.body.getBoundingClientRect().bottom;
     const beatEls = document.querySelectorAll<HTMLElement>(".beat");
 
     beatEls.forEach((beatEl) => {
